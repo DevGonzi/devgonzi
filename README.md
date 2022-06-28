@@ -1,16 +1,27 @@
-### Hi there 👋
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
 
-<!--
-**DevGonzi/devgonzi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+struct strings {
+  std::string name;
+　std::string country;
+　std::string mainProgrammingLanguages;
+};
 
-Here are some ideas to get you started:
+int main(void) {
+　std::vector<strings> profile(10);
+　profile[0].name = "David";
+　profile[0].country = "Germany";
+  profile[0].mainProgrammingLanguages = "TypeScript";
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  std::cout << "My name is ";
+　std::cout << profile[0].name;
+　std::cout << ", I  come from ";
+　std::cout << profile[0].country;
+　std::cout << " and my main programming language is ";
+　std::cout << profile[0].mainProgrammingLanguages;
+　std::cout << ". I also work with JavaScript, Node.js, SQL and C#.";
+　return 0;
+}
+```
